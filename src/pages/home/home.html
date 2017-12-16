@@ -5,12 +5,9 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to an RPG Novel thing</h2>
-  <p>
-    Click next to create your character.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Welcome to RPG Novel</h2>
+  <p>Click the button to below and refresh if you want to test the onboarding screen again</p>
+  <ion-col>
+    <button ion-button color="light" (click)="resetOnBoard()">Reset to first time opening app</button>
+  </ion-col>
 </ion-content>

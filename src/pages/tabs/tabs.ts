@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
+import { IonicPage } from 'ionic-angular';
 
-import { MapPage } from '../map/map';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
-
+@IonicPage()
 @Component({
   templateUrl: 'tabs.html'
 })
-export class TabsPage {
-
-  tab1Root = HomePage;
-  tab2Root = MapPage;
-  tab3Root = ContactPage;
+export class Tabs {
+  // this tells the tabs component which Pages
+  // should be each tab's root Page
+  tab1Root: any = 'Home';
+  tab2Root: any = 'Map';
+  tab3Root: any = 'Contact';
 
   constructor() {
 

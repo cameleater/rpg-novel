@@ -1,0 +1,40 @@
+<ion-slides pager="false">
+
+  <ion-slide>
+    <img src="images/slide1.png" />
+    <h2> First slide </h2>
+    <p> Welcome to this baller APP </p>
+    <button ion-button color="dark">Login here (doesn't do anything yet)</button><p> OR </p>
+    <button ion-button color="light" (click)="slideNext()">Continue to next slide and Register</button>
+  </ion-slide>
+
+  <ion-slide>
+    <img src="images/slide2.png" />
+    <h2> Second slide </h2>
+    <p> Enter email, username, password etc. </p>
+    <button ion-button color="light" (click)="slideNext()">Continue</button>
+  </ion-slide>
+
+  <ion-slide>
+    <img src="images/slide3.png" />
+    <h2> Third slide </h2>
+    <p> Enter any extra details that need to be saved to users profile </p>
+    <button ion-button color="light" (click)="slideNext()">Continue</button>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-row>
+      <ion-col>
+        <img src="images/slide4.png" />
+       <h2> Fourth slide </h2>
+       <p> Profile created, continue to APP </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="light" (click)="goToHome()">Start Using My App</button>
+      </ion-col>
+    </ion-row>
+  </ion-slide>
+
+</ion-slides>
